@@ -307,7 +307,7 @@ margin-left: auto!important;"alt="photo de Muriel Imbert">
     <div class="container">
         <div class="row padding-top-l padding-bottom-l">
             <div class="col s12 center-align ">
-                <h2 class="white-text center-align">Accedez à mon CV/Porfolio</h2>
+                <h2 class="white-text center-align">Accedez à mon CV/Portfolio</h2>
             </div>
             <br>
             <div class="col s12 l4 offset-l4 center-align">
