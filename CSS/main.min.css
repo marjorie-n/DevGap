@@ -1,7 +1,13 @@
+/*NAV*/
+a.col.svelte-14kj3to{
+    color:#ffc31e;
+}
 a.col.svelte-14kj3to:hover {
-    color: gold;
+    background-color:#FF4081;
   }
-
+  .footer-copyright > div:nth-child(1) > a:nth-child(2):hover{
+    background-color: #FF4081 ;
+  }
 #nav-bar.svelte-14kj3to {
     position: fixed;
     width: 100%;
@@ -10,15 +16,53 @@ a.col.svelte-14kj3to:hover {
     display: flex;
     justify-content: space-around;
     z-index: 888;
+    color:#ffc31e;
 }
 ul.svelte-14kj3to {
     margin: 0;
     display: flex;
-}
-a.svelte-14kj3to:hover {
-    color: gold;
+    
 }
 
+#nav-bar > p:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+    width:80px !important;
+    margin-top: -10px !important;
+}
+/*CARROUSEL-RESPONSIVE*/
+div#slider figure {
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+  }
+div#slider figure img { width: 20%; height: auto; float: left; }
+div#slider { width: 80%; max-width: 1000px; overflow: hidden;display: block;
+    margin-left: auto; margin-right: auto; }
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    /*95% { left: -300%; }*/
+    /*100% { left: -400%; }*/
+  }
+  div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+  }
+  /* */
+  /*RESPONSIVE*/
 @media screen and (max-width: 992px) {
     #nav-bar.svelte-14kj3to {
       display: none;
@@ -44,7 +88,7 @@ li.svelte-14kj3to {
 #process p,
 h2,
 p {
-    color: #fff
+    color:white;
 }
 
 .h2-title,
@@ -116,9 +160,14 @@ h2 {
 }
 
 html {
-    color:#30405b;
+    color:white;
 }
-
+hr{
+    color:#00E5FF !important;
+}
+.circle.font-weight-bold{
+    color:#FF4081 !important;
+}
 .icon-scroll,
 .icon-scroll:before {
     position: absolute;
@@ -259,9 +308,12 @@ header {
 
 #logo img {
     width: 150px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    /*box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 width: 250px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 .header-content {
@@ -335,7 +387,7 @@ width: 250px;
     background-image: url(../assets/img/symfony.png);
 }
 #process4{
-    background-image: url(../assets/img/wordpress.png);
+    background-image: url(../assets/img/october.png);
 }
 #process5{
     background-image: url(../assets/img/javascript.png);
@@ -663,6 +715,9 @@ footer {
     }
     #logo img {
         width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     header h2 {
         font-size: 1.2rem;
