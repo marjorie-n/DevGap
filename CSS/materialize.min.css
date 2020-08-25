@@ -1597,7 +1597,7 @@
  background-color:#fff !important
 }
 .white-text {
- color:#fff !important
+ color:white; 
 }
 .transparent {
  background-color:rgba(0,0,0,0) !important
@@ -1637,7 +1637,7 @@ hr {
  -webkit-box-sizing:content-box;
  box-sizing:content-box;
  height:0;
- overflow:visible
+ overflow:visible;
 }
 pre {
  font-family:monospace, monospace;
@@ -1930,7 +1930,7 @@ i.large {
 }
 img.responsive-img,
 video.responsive-video {
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+/*box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
  max-width:100%;
  height:auto;
  margin-left: auto;
